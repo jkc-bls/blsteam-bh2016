@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Front-end - Advanced Development for Beginners</title>
+
+    <meta name="description" content="Wszystko co początkujący programista powinien wiedzieć">
+    <meta name="author" content="Adam Kucharski i Mateusz Skoczylas">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/moon.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section>
+          <h1>Front-end Solutions</h1>
+          <p>
+            Advanced Development for Beginners
+          </p>
+        </section>
+        <section>
+          <section>
+            <h2>Co to jest Front-end?</h2>
+            <aside class="notes">
+              Tu chcemy opowiedziec ze pojecie frontendu powstalo niedawno.
+              Ze FE + BE to jest separation of concerns:
+              - presentation layer
+              - data access layer
+            </aside>
+          </section>
+          <section>
+            <h3>Bardzo dawno temu</h3>
+            <ul>
+              <li class="fragment">ubogie, proste strony</li>
+              <li class="fragment">zawieszający się javascript</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Nie tak dawno temu, a nawet teraz</h3>
+            <ul>
+              <li class="fragment">flashowe strony</li>
+              <li class="fragment">ajax - przeładowanie małych fragmentów strony</li>
+              <li class="fragment">stanowe serwery (stateful servers)</li>
+              <li class="fragment">cała nawigacja odbywa sie po stronie serwera</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Front-end + Back-end</h3>
+            <ul>
+              <li class="fragment">FE: aplikacja napisana w Javascript</li>
+              <li class="fragment">BE: na ogół bezstanowy serwer</li>
+              <li class="fragment">nawigacja po stronie FE</li>
+              <li class="fragment">więcej możliwości</li>
+              <li class="fragment">więcej odpowiedzialności</li>
+            </ul>
+          </section>
+          <section>
+             <img src="images/fe-be.png" width="70%"/>
+
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>Jak to działa?</h2>
+            <aside class="notes">
+              Tu chcemy opowiedziec jakie dostepne sa technologie.
+              Jak dokonac wyboru. Jak postawic srodowisko developerskie.
+              Ze warunkiem koniecznym jest edytor i przegladarka ale niewystarczajacym.
+            </aside>
+          </section>
+          <section>
+            <h3>Komponenty</h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+              <li>Budowanie i Automatyzacja</li>
+            </ul>
+          </section>
+          <section>
+            <h3>HTML</h3>
+            <ul>
+              <li>Haml</li>
+              <li>Jade</li>
+              <li>ECT</li>
+              <li>... i kilkadziesiąt innych</li>
+            </ul>
+            <aside class="notes">
+              to raczej jako ciekawostka, bo sam tego nie popieram.
+              To jest wymyslanie wlasnych standardow i dodatkowa nauka.
+              Migracja do innej technologii upierdliwa badz niemozliwa.
+            </aside>
+          </section>
+          <section>
+            <h3>CSS</h3>
+            <h4>Stylesheet Languages</h4>
+            <ul>
+              <li>Sass</li>
+              <li>Less</li>
+              <li>Stylus</li>
+            </ul>
+            <aside class="notes">
+              Tu wyjasnic dlaczego warto tego uzywac. Ze czytelniejsze.
+              Ze latwiejsze w utrzymaniu.
+            </aside>
+          </section>
+          <section>
+            <h3>CSS</h3>
+            <h4>CSS Frameworks</h4>
+            <ul>
+              <li>Bootstrap</li>
+              <li>Foundation</li>
+              <li>Materialize</li>
+              <li>... i 25 innych</li>
+            </ul>
+            <aside class="notes">
+              wyjasnic ze wczesniej frameworki css mialy wiekszy sens, ze wzgledu na standaryzacje.
+              ze dla malych projektow takie rozwiazania sa super bo niewiele customizacji
+              dla duzych warto sie zastanowic 10x zanim sie czegos uzyje.
+            </aside>
+          </section>
+          <section>
+            <h3>Javascript Frameworks</h3>
+            <ul>
+              <li>AngularJS</li>
+              <li>Aurelia</li>
+              <li>Backbone.js</li>
+              <li>Ext JS</li>
+              <li>Ember.js</li>
+              <li>GWT</li>
+              <li>Knockout.js</li>
+              <li>... i 20 innych</li>
+            </ul>
+            <aside class="notes">
+              roznica pomiedzy frameworkiem a biblioteką,
+              kiedy czego uzywać
+            </aside>
+          </section>
+          <section>
+             <img src="images/frameworks-graph.JPG" width="70%"/>
+
+          </section>
+          <section>
+            <h3>Javacript Libraries</h3>
+            <ul>
+              <li>JQuery</li>
+              <li>React.js</li>
+              <li>... i 10000 innych</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Budowanie i Automatyzacja</h3>
+            <ul>
+              <li>Gulp</li>
+              <li>Grunt</li>
+              <li>Babel</li>
+              <li>Browserify</li>
+              <li>Webpack</li>
+              <li>npm</li>
+              <li>bower</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Co wybrać?</h3>
+            <aside class="notes">
+              Jako poczatkujacy programista nie jestes w stanie obiektywnie
+              wybrac najlepszego narzedzia do danego zadania i musisz polegac
+              na wiedzy innych dopoki twoje doswiadczenie nie bedzie
+              wystarczajace.
+            </aside>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>Jak się uczyć? Od czego zacząć?</h2>
+          </section>
+          <section>
+            <h3>Yeoman generator</h3>
+            <p>
+              http://yeoman.io/generators/
+            </p>
+          </section>
+          <section>
+            <h3>Dobre praktyki</h3>
+            <p>
+              https://github.com/johnpapa/angular-styleguide
+            </p>
+          </section>
+          <section>
+            <h3>DEMO</h3>
+          </section>
+        </section>
+
+        <section style="text-align: left;">
+          <h1>THE END</h1>
+          <h3><a href="">academy.blstream.com</a></h3>
+          <p>adam.kucharski@blstream.com</p>
+          <p>mateusz.skoczylas@blstream.com</p>
+          <aside class="notes">
+            <pre>
+              <code></code>
+            </pre>
+
+          </aside>
+        </section>
+
+      </div>
+
+      <footer>
+        <img src="images/logo-blstream-smt-white.png" width="40%"/>
+      </footer>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true },
+          { src: 'plugin/notes/notes.js', async: true }
+        ],
+        // Bounds for smallest/largest possible scale to apply to content
+        minScale: 0.001,
+        maxScale: 100
+      });
+
+    </script>
+
+  </body>
+</html>
